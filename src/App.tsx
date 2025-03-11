@@ -1,14 +1,19 @@
-import './App.css'
-import Header from './components/Header'
+// App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Homepage";
+import SearchPage from "./pages/SearchPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
-
-
   return (
-    <>
-     <Header />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

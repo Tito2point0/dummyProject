@@ -32,8 +32,7 @@ const Header = () => {
         <nav className="flex space-x-8 items-center ml-auto">
           {[ 
             { name: "Home", path: "/" },
-            { name: "Work", path: "/work" },
-            { name: "Gallery", path: "/gallery" },
+           {name: "Search", path: "/search" },
             { name: "Contact", path: "/contact" },
           ].map((link) => (
             <button
